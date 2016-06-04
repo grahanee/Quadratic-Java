@@ -1,0 +1,64 @@
+package quadratic;
+
+/**
+ *
+ * @author grahani
+ */
+
+import java.util.*;
+
+import java.lang.Math;
+
+
+
+
+
+
+
+public class Quadratic {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        double a;
+        double b;
+        double c;
+        double square1;
+        double square2;
+        
+        
+        Scanner squareroot = new Scanner (System.in);
+        
+        System.out.println("input a: ");
+        a = squareroot.nextDouble();
+        
+        System.out.println("input b: ");
+        b = squareroot.nextDouble();
+        
+        System.out.println("input c: ");
+        c = squareroot.nextDouble();
+        
+       
+
+        
+        
+        square1 = (-b+Math.sqrt(b*b-4*a*c))/(2*a);
+        square2 = (-b-Math.sqrt(b*b-4*a*c))/(2*a);
+        
+        
+        System.out.println("a is:" +a);
+        System.out.println("b is:"  +b);
+        System.out.println("c is:"  +c);
+        
+        
+        System.out.println("square1 is:" +square1);
+        System.out.println("square2 is"  +square2);
+        
+        
+    
+        
+    }
+}
